@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+
+    <style>
+        .content{
+            position: relative;
+        }
+
+        .container2, .container3, .container1 {
+            position: relative;
+        }
+
+        .list-div-parent {
+            display:flex;
+            width:400px;
+            height:200px;
+            overflow-x: scroll;
+        }
+
+        .list {
+            padding: 20px;
+            background-color: red;
+            gap:10px;
+            list-style-type: none;
+            margin: 10px;
+        
+        }
+
+        .image{
+            width:400px;
+            height: 400px;
+            background-color: rgba(134, 146, 142, 0.86);
+        }
+    </style>
+
+</head>
+<body style="position: relative;">
+    <div>First Div</div>
+    <div>Second Divs</div>
+    <section class="container1" style="padding:20px; background-color: blue;">
+        <section class="container2" style="padding:20px; background-color: red;">
+            <section class="container3" style="padding:20px; background-color: orange;">
+                <div class="content">Position</div>
+            </section>
+        </section>
+    </section>
+    <div style="position: absolute; top:0;">Third Element</div>
+
+
+    <section>
+        <ul class="list-div-parent">
+            <li class="list">A</li>
+            <li class="list">B</li>
+            <li class="list">C</li>
+            <li class="list">D</li>
+            <li class="list">E</li>
+            <li class="list">F</li>
+            <li class="list">G</li>
+            <li class="list">H</li>
+            <li class="list">I</li>
+            <li class="list">J</li>
+            <li class="list">K</li>
+            <li class="list">L</li>
+            <li class="list">M</li>
+            <li class="list">N</li>
+            <li class="list">O</li>
+            <li class="list">P</li>
+            <li class="list">Q</li>
+            <li class="list">R</li>
+            <li class="list">S</li>
+            <li class="list">T</li>
+            <li class="list">U</li>
+            <li class="list">V</li>
+            <li class="list">W</li>
+            <li class="list">X</li>
+            <li class="list">Y</li>
+            <li class="list">Z</li>
+        </ul>
+    </section>
+
+
+    <div class="image-container" style="position: absolute;">
+        <img class="image" src="https://b.zmtcdn.com/data/dish_photos/611/43a98f22573cb56d9efc6cba41eb9611.jpg?output-format=webp"/>
+        <div class="left-content" style="position: absolute; left:0; bottom:15px; background-color: blue; color: white; padding:5px">50% OFF upto 100</div>
+        <div class="right-content"style="position: absolute; right:0; bottom:15px; background-color: rgba(134, 146, 142, 0.86); color: black; padding:5px">36min</div>
+    </div>
+</body>
+</html>

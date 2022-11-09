@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts_List</title>
+
+    <style>
+        .contacts {
+            background-color: rgb(158, 158, 188);
+            height: 50vh;
+            width:40%;
+            overflow: scroll;
+            
+        }
+
+        .contacts::-webkit-scrollbar{
+            display: none;
+        }
+
+        .contacts_title {
+            padding-bottom: 1rem;
+            text-align: center;
+        }
+
+        .contacts_first_alphabet {
+            background-color: rgba(white, 0.5);
+            padding: 10px;
+            position: sticky;
+            top: 0;
+        }
+
+        .contacts_list > * {
+            list-style: none;
+            margin: 0;
+            padding: 10px;
+            background-color: rgb(75, 73, 73);
+            text-align: center;
+            margin: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="contacts">
+        <h1 class="contacts__title" style="text-align:center;">My contacts</h1>
+  
+  <section class="contacts_section">
+    <h2 class="contacts_first_alphabet">A</h2>
+    <ul class="contacts_list">
+      <li class="contacts_item">Akshay</li>
+      <li class="contacts_item">Aniket</li>
+      <li class="contacts_item">Abhishek</li>
+      <li class="contacts_item">Abhay</li>
+    </ul>
+  </section>
+  
+  <section class="contacts__section">
+    <h2 class="contacts_first_alphabet">B</h2>
+    <ul class="contacts_list">
+      <li class="contacts_item">Bhavya</li>
+      <li class="contacts_item">Bharat</li>
+      <li class="contacts_item">Bhavik</li>
+      <li class="contacts_item">Bhargav</li>
+    </ul>
+  </section>
+  
+  <section class="contacts_section">
+    <h2 class="contacts_first_alphabet">C</h2>
+    <ul class="contacts_list">
+      <li class="contacts_item">Chetan</li>
+      <li class="contacts_item">Chandan</li>
+      <li class="contacts_item">Chinmay</li>
+      <li class="contacts_item">Chirag</li>
+    </ul>
+  </section>
+    </div>
+</body>
+</html>
